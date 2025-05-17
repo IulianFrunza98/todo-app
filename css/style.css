@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4ff, #fafafa);
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  padding: 2rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: #333;
+}
+
+.app-container {
+  background-color: #fff;
+  padding: 3rem 4rem;
+  border-radius: 1.2rem;
+  width: 100%;
+  max-width: 60rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+form input {
+  flex: 1;
+  padding: 1.2rem 1.6rem;
+  font-size: 1.6rem;
+  border-radius: 0.6rem;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 0.3rem rgba(74, 144, 226, 0.3);
+}
+
+form button {
+  width: 4.4rem;
+  height: 4.4rem;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.8rem;
+}
+
+form button:hover {
+  background-color: #3a7cd6;
+  transform: scale(1.1);
+}
+
+ul.todo-list {
+  list-style: none;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 1.2rem 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.todo-item:hover {
+  background-color: #f0f0f0;
+}
+
+.todo-item input[type="checkbox"] {
+  transform: scale(1.4);
+  cursor: pointer;
+  accent-color: #4a90e2;
+}
+
+.todo-text {
+  flex: 1;
+  margin: 0 1.5rem;
+  text-align: center;
+  font-size: 1.6rem;
+  word-break: break-word;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete-button {
+  background: transparent;
+  border: none;
+  color: #e57373;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.delete-button:hover {
+  color: #d32f2f;
+}
