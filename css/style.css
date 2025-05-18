@@ -30,6 +30,14 @@ h1 {
   color: #333;
 }
 
+button {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  background: transparent;
+  border: none;
+}
+
 .app-container {
   background-color: #fff;
   padding: 3rem 4rem;
@@ -123,14 +131,91 @@ ul.todo-list {
 }
 
 .delete-button {
-  background: transparent;
-  border: none;
   color: #e57373;
-  font-size: 2rem;
-  cursor: pointer;
-  transition: color 0.3s ease;
+  margin-right: 1rem;
+}
+
+.edit-button {
+  color: rgba(48, 167, 48, 0.717);
 }
 
 .delete-button:hover {
   color: #d32f2f;
+}
+
+.edit-button:hover {
+  color: rgba(33, 125, 33, 0.717);
+}
+
+.completed .todo-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.6rem;
+  border: 1px solid #4a90e2;
+  border-radius: 0.4rem;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+/* Popup container */
+.edit-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Popup content */
+.popup-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.6rem;
+  width: 400px;
+  text-align: center;
+}
+
+#edit-input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  border-radius: 0.6rem;
+  border: 1px solid #ccc;
+}
+
+.popup-buttons button {
+  padding: 0.8rem 1.2rem;
+  font-size: 1.6rem;
+  border-radius: 0.4rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.save-button {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.save-button:hover {
+  background-color: #3a7cd6;
+}
+
+.cancel-button {
+  background-color: #e57373;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #d32f2f;
 }
